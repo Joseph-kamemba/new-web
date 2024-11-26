@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './testing.component.css'
 })
 export class TestingComponent {
-  title = 'Hello Julls';
+  title = 'Hello Julls, I love You Soo Much';
   isVisible = true;
   items: string[]=['Item 1', 'Item 2', 'Item 3', 'Item 4'];
 
