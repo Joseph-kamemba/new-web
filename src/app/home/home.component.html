@@ -1,0 +1,14 @@
+<div class="hero-section">
+  <div class="slideshow">
+    <div *ngFor="let product of products; let i = index" 
+         [ngClass]="{'active-slide': currentSlideIndex === i}" 
+         class="slide" 
+         [ngStyle]="{'background-image': 'url(' + product.url + ')'}">
+    </div>
+  </div>
+  <div class="hero-content text-center">
+    <h1 class="hero-title">Bring Your Brand to Life!!</h1>
+    <p class="hero-subtitle">Professional Designing, Printing, and Branding Services</p>
+    <button class="btn btn-primary bottom-button" (click)="navigateToShopNow()">Explore Our Services</button>
+  </div>
+</div>

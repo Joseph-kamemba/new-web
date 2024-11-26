@@ -1,0 +1,88 @@
+/* Ensure body and html fill the full screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevents extra scrolling */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hero Section: Takes the full screen width and height */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+  }
+  
+  /* Slideshow Container */
+  .slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Individual Slide Styling */
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ensure the background fills the slide */
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Active Slide: Make the visible slide fully opaque */
+  .active-slide {
+    opacity: 1;
+  }
+  
+  /* Hero Content: Centered and Text-Aligned */
+  .hero-content {
+    position: relative;
+    z-index: 2; /* Make sure content is above the slideshow */
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Title and Subtitle Styling */
+  .hero-title {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+  }
+  
+  /* Button Styling */
+  .bottom-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bottom-button:hover {
+    background-color: #0056b3;
+  }
+  
+  

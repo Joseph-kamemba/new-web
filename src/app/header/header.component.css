@@ -1,0 +1,101 @@
+.header-container {
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:gray;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .main-nav {
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .sub-nav {
+    position: relative;
+  }
+  
+  .nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  min-width: 150px;
+  z-index: 1;
+  }
+
+  .sub-nav:hover .dropdown-menu,
+.sub-nav .dropdown-menu:hover {
+  display: block;
+}
+  
+  .contact-number {
+    margin-left: 20px;
+    font-weight: 600;
+  }
+  
+  .cart-icon {
+    cursor: pointer;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .buy-now-btn {
+    margin-left: 15px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 16px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .buy-now-btn:hover {
+    background-color: #0056b3;
+  }
+  

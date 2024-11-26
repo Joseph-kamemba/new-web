@@ -1,0 +1,18 @@
+<p>testing works!</p>
+
+<div class="h1">{{title}}</div>
+<button (click)="changeTitle()">Change Title</button>
+
+<button (click)="toggleVisibility()">Toggle Message</button>
+<p *ngIf="isVisible">This is a Conditional Message!</p>
+
+<div class="items">
+    <div class="h2">
+        Item List
+    </div>
+    <ul>
+        <li *ngFor="let item of items; let i = index">
+            {{i+1}}. {{item}}
+        </li>
+    </ul>
+</div>
