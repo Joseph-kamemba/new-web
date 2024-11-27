@@ -1,18 +1,23 @@
-<p>testing works!</p>
+<p class="head">I had to do this by the way!</p>
 
 <div class="h1">{{title}}</div>
-<button (click)="changeTitle()">Change Title</button>
+<button class= "need" (click)="changeTitle()">Need Change!!</button>
 
-<button (click)="toggleVisibility()">Toggle Message</button>
-<p *ngIf="isVisible">This is a Conditional Message!</p>
+<button class= "do" (click)="toggleVisibility()">Do it yourself!!!!</button>
+<p *ngIf="isVisible">This is my Message to you!</p>
 
 <div class="items">
     <div class="h2">
-        Item List
+    Things To Do:
     </div>
     <ul>
         <li *ngFor="let item of items; let i = index">
-            {{i+1}}. {{item}}
+            {{i+1}} {{item}}
         </li>
     </ul>
+</div>
+
+<div>
+    <button (click)="onButtonClick()">Click Me!</button>
+    <p>{{message}}</p>
 </div>

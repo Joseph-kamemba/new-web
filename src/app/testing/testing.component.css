@@ -1,0 +1,21 @@
+
+.h1{
+    color:rgb(104, 26, 206);
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.head{
+    color: green;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: larger;
+}
+.do{
+    background-color: blue;
+}
+.need{
+    background-color: aqua;
+}
