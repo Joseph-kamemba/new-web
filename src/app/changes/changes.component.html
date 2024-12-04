@@ -1,1 +1,23 @@
-<p>changes works!</p>
+<h1>Welcome To this Page!</h1>
+<h2>Yu can get your Popcorns</h2>
+
+<div>
+    <h3>ngOnchanges Examples</h3>
+    <label for="input">Change the Value</label>
+    <input id="input" type="text" [(ngModel)]="inputValue" placeholder="Enter Value"/>
+    <app-child [value]="inputValue"></app-child>
+</div>
+
+<div>
+    <h3>ngOnInit Example</h3>
+    <p>The component will initialize and log a message in the console.</p>
+</div>
+
+<div>
+    <h3>ngDoCheck Example</h3>
+    <label for="counter">Update Counter:</label>
+    <input id="counter" type="number" [(ngModel)]="counter" />
+    <p>Counter value: {{ counter }}</p>
+  </div>
+  
+  
