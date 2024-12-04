@@ -19,3 +19,19 @@
 .need{
     background-color: aqua;
 }
+.image-resize{
+    width: 25vw;
+    height: 25vh;
+    overflow: auto;
+}
+.image-resize img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.project-container{
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+   
+    
+}

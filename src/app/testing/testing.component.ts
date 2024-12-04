@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-testing',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule],
   templateUrl: './testing.component.html',
   styleUrl: './testing.component.css'
 })
@@ -18,7 +19,10 @@ export class TestingComponent {
       'Connect with Nature', 'Celebrate Small Wins'];
 
   message: string = '';
-
+  imageUrl: string = 'images/babyboo.jpg';
+  isDisabled: boolean = true;
+  userInput: string = '';
+  
   onButtonClick(): void {
     this.message = 'I love you Baby Boo'
   }

@@ -1,3 +1,4 @@
+<div class="project-container">
 <p class="head">I had to do this by the way!</p>
 
 <div class="h1">{{title}}</div>
@@ -20,4 +21,14 @@
 <div>
     <button (click)="onButtonClick()">Click Me!</button>
     <p>{{message}}</p>
+</div>
+
+<div class="image-resize">
+    <img [src]="imageUrl" alt="placeholder Image">
+    <button [disabled]="isDisabled">Click Me</button>
+</div>
+<div>
+    <input [(ngModel)]="userInput" placeholder="Enter Text">
+    <p>I said: {{userInput}}</p>
+</div>
 </div>
